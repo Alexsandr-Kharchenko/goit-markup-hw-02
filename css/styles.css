@@ -4,7 +4,11 @@ body {
   background-color: #ffffff;
 }
 
-ul {
+ul,
+ol {
+  list-style-type: none;
+}
+a {
   list-style-type: none;
 }
 
@@ -43,22 +47,38 @@ h3 {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.header-contacts {
+  font-style: normal;
+}
+.header-navigation-link:hover,
+.header-navigation-link:focus,
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: #404bbf;
+}
+
+/* main */
+
 .main-title-effective {
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  background-color: #2e2f42;
 }
 
 .order-btn {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  cursor: pointer;
+}
+.main--title-section {
+  background-color: #2e2f42;
 }
 
 /* soft-Skills */
@@ -80,14 +100,19 @@ h3 {
 
 /* Our Team */
 
+.our-team {
+  background-color: #f4f4fd;
+}
+
 .our-team-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  text-transform: capitalize;
 }
 
 .our-team-subtitl {
@@ -109,12 +134,13 @@ h3 {
 }
 /* Our Portfolio */
 .our-portfolio-title {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  text-transform: capitalize;
 }
 .our-portfolio-subtitle {
   font-size: 20px;
@@ -132,8 +158,23 @@ h3 {
 
 /* footer */
 
-.footer {
+.footer-page {
   background-color: #2e2f42;
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+}
+
+.logo-part {
+  color: #f4f4fd;
 }
 
 .footer-text {
